@@ -62,22 +62,24 @@ body {
 
 .advanced {
   width: 90%;
-  background-color: #2d6a4f;
+  background-color: #3a7d60;
+  color: #FFF;
 }
 
 .intermediate {
   width: 60%;
-  background-color: #52b788;
+  background-color: #e6f2eb;
+  color: #333;
 }
 
 .beginner {
   width: 30%;
-  background-color: #b7e4c7;
+  background-color: #e6f2eb;
 }
 
 /* Skills */
 .skill-tags span {
-  background: #9fedcc54;
+  background: #e6f2eb;
   border-radius: 20px;
   padding: 6px 12px;
   margin: 5px;
@@ -92,11 +94,102 @@ body {
 }
 
 .card.education {
-    margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.edu-item {
+  display: flex;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  gap: 40px;
 }
 
+.edu-left {
+  flex: 0 0 250px;
+  color: #010101;
+  padding-right: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3); /* optional divider */
+}
+
+.edu-left h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.edu-right {
+  flex: 1;
+}
+
+.edu-right ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.edu-item.green {
+  background: #3a7d60; /* dark green background */
+  color: #fff;
+}
+
+.edu-item.light {
+  background: #e6f2eb;
+  color: #333;
+}
+
+
 .card.tools {
-    margin-top: 30px;
+ display: flex;
+ gap: 15px;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+.card.experience {
+ display: flex;
+ gap: 15px;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+.exp-item {
+  display: flex;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.exp-left {
+  flex: 0 0 250px;
+  color: #0d0d0d;
+  padding-right: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3); /* optional separator */
+}
+
+.exp-left h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.exp-right {
+  flex: 1;
+}
+
+.exp-right ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.exp-item.green {
+  background: #3a7d60;
+  color: #fff;
+}
+
+.exp-item.light {
+  background: #e6f2eb;
+  color: #333;
 }
 
 .project {
@@ -109,8 +202,7 @@ body {
 .project {
   position: relative;
 }
-
-.project::after {
+.project:after {
   content: "♥️";
   position: absolute;
   top: 12px;
@@ -119,11 +211,16 @@ body {
 }
 
 .project-cards .project:nth-child(1) {
-  background-color: #548178;
+  background-color: #3a7d60;
+  color: #fff;
 }
 .project-cards .project:nth-child(2) {
   background-color: #e6f2eb;
 }
+.project-cards .project:nth-child(3) {
+  background-color: #e6f2eb;
+}
+
 
 /* Footer */
 .contact {
