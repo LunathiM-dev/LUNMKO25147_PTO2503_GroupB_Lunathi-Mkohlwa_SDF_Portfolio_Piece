@@ -41,7 +41,7 @@ body {
 .card {
   background: #f9f9f9;
   border-radius: 29.04px;
-  padding: 20px;
+  padding: 30px;
   flex: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -51,6 +51,16 @@ body {
   list-style: none;
   padding: 0;
 }
+.proficiency li:hover .bar.advanced {
+  background-color: #2eb678;
+}
+.proficiency li:hover .bar.intermediate {
+  background-color: #66d6a1;
+}
+.proficiency li:hover .bar.beginner {
+  background-color: #b7e4c7;
+}
+
 
 .bar {
   display: block;
@@ -86,7 +96,7 @@ body {
   display: inline-block;
 }
 .skill-tags span {
-  transition: background 0.3s, color 0.3s;
+  transition: backround 0.3s, color 0.3s;
 }
 .skill-tags span:hover {
   background: #3a7d60;
@@ -110,11 +120,16 @@ body {
 
 
 .card.education {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
   margin-top: 20px;
 }
+.edu-item, .exp-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.edu-item:hover, .exp-item:hover {
+  transform: translateY(-5px) scale(1.02); /* Slight pop-up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
 
 .edu-item {
   display: flex;
@@ -126,7 +141,7 @@ body {
 
 .edu-left {
   flex: 0 0 250px;
-  color: #010101;
+  color: #040404;
   padding-right: 10px;
   border-right: 2px solid rgba(255, 255, 255, 0.3); /* optional divider */
 }
@@ -156,17 +171,16 @@ body {
   color: #333;
 }
 
-
 .card.tools {
- display: flex;
- gap: 15px;
- flex-wrap: wrap;
  margin-top: 20px;
 }
+
+.card.tools img {
+display: block;
+margin: 0 auto;
+}
+
 .card.experience {
- display: flex;
- gap: 15px;
- flex-wrap: wrap;
  margin-top: 20px;
 }
 .exp-item {
@@ -272,10 +286,28 @@ body {
 .contact a {
   color: white;
   text-decoration: underline;
+  display: inline-block;
+  margin: 4px 8px 4px o;
+  word-break: break-word;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .edu-item, .exp-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .edu-left, .exp-left {
+    flex: 1;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .edu-right, .exp-right {
+    flex: 1;
+  }
   .header, .row, .project-cards {
     flex-direction: column;
   }
@@ -283,4 +315,5 @@ body {
   .project {
     flex: 1 1 100%;
   }
+
 }
