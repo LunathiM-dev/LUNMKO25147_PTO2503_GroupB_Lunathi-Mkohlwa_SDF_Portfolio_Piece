@@ -61,7 +61,7 @@ You will be scored on:
 - Visual walkthrough of your site and responsiveness
 - Presentation skills (confidence, clarity, visual aids)
 
-📎 [View the Presentation Template Here](https://github.com/CodeSpace-Academy/SDFPP-2025/blob/main/project%20guide/presentation_template.md)
+📎 My portfolio piece video link: https://www.loom.com/share/f982da2b109c46249c63904c7af5f068?sid=83e0c507-6dab-452a-8fb5-62b0b039ed00
 
 ---
 
